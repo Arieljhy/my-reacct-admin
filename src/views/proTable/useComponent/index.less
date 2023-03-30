@@ -1,0 +1,105 @@
+* {
+	box-sizing: border-box;
+}
+.content-box {
+	.sjx {
+		.top {
+			width: 100px;
+			border: 50px solid red;
+			border-color: transparent transparent red;
+		}
+		.left {
+			width: 100px;
+				border: 50px solid red;
+				border-color: transparent red  transparent  transparent;
+
+		}
+		.right {
+			width: 100px;
+				border: 50px solid red;
+				border-color: transparent transparent transparent red;
+
+		}
+		.bottom {
+			width: 100px;
+				border: 50px solid red;
+				border-color:red transparent transparent;
+
+		}
+
+	}
+	.fix-btn {
+		position:fixed;
+		right: 20px;
+		bottom: 20px;
+		width: 40px;
+		height: 40px;
+		font-size: 28px;
+		text-align: center;
+		cursor: pointer;
+		border-radius: 50%;
+	}
+	.flex1 {
+			display: flex;
+			flex-direction: column;
+			height:200px;
+			background: black;
+			.top {
+				flex: none;
+				height: 20px;
+				background: red;
+			}
+			.center {
+				flex: 1;
+				background: yellow;
+			}
+			.bottom {
+				flex: none;
+				height: 20px;
+				background: red;
+			}
+		}
+	.flex2 {
+			width: 100%;
+			background: black;
+			.left {
+				float: left;
+				width: 100px;
+				height: 200px;
+				margin-left: -100%;
+				background: red;
+			}
+			.center {
+				float: left;
+				width: 100%;
+				height: 200px;
+				padding: 0 100px;
+				background: yellow;
+			}
+			.right {
+				float: left;
+				width: 100px;
+				height: 200px;
+				margin-left: -100px;
+				background: red;
+			}
+		}	
+	.flex3 {
+				display: flex;
+				height: 200px;
+				background: black;
+				.left {
+					width: 100px;
+					background: red;
+				}
+				.center {
+					flex: 1;
+					background: yellow;
+				}
+				.right {
+					width: 100px;
+					background: red;
+				}
+			}
+}
+
